@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity(), OnItemClickListener {
 
     private fun initData() {
         main_recycler_view.layoutManager = LinearLayoutManager(this)
-        val adapter = ListAdapter(this, datas)
+        val adapter = ListAdapter(this, datas, ListAdapter.ListLayout.VERTICAL)
         adapter.onItemClickListener = this
         main_recycler_view.adapter = adapter
     }
